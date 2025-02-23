@@ -56,7 +56,7 @@ To replicate this system environment, follow these steps:
 
 1️⃣ **Clone Repository**  
 ```bash
-git clone https://github.com/Rising-Stars-by-Sunshine/Yiwei_Zhang_PS1.git
+git clone https://github.com/Rising-Stars-by-Sunshine/Yiwei_Zhang_PS2.git
 cd Yiwei_Zhang_PS1
 ```
 2️⃣ **📌 Create a Virtual Environment**
