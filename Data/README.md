@@ -14,20 +14,55 @@ This repository contains a financial-domain-focused dataset for financial sentim
 - tweet data: train_stockemo.csv
     - **train_stockemo.csv** : In total, 8000 samples. The file has id, date, ticker, emo_label, senti_lable, original, and processed content. For the data curation, processing (e.g. emoji, CTAG, HTAG), and annotation, we refer to our paper. The dataset is used for Financial Sentiment/Emotion Classification tasks.
     - [Download the dataset](https://github.com/Rising-Stars-by-Sunshine/Yiwei_Zhang_PS2/blob/main/Data/merged_stock_prices.csv)
-    - ## Data Dictionary
+
+## Data Dictionary
+
+The dataset contains stock market sentiment and emotion analysis data with the following columns:
+
+| Column Name  | Data Type  | Description  |
+|-------------|------------|-----------------------------------------------|
+| ID          | Integer    | Unique identifier for the record |
+| Date        | String     | Date of the stock-related event (YYYY-MM-DD) |
+| Stock       | String     | Stock ticker symbol (e.g., AAPL, TSLA) |
+| Text        | String     | Stock market-related news or text |
+| Sentiment   | Float      | Sentiment score assigned to the text |
+| Emotion     | String     | Emotion category detected in the text (e.g., Joy, Fear) |
+| Close Price | Float      | Closing price of the stock on the given date |
+| Volume      | Integer    | Stock trading volume on the given date |
+
+## Sample Data
+
+Below is a preview of the dataset:
+
+| ID | Date       | Stock | Text                                     | Sentiment | Emotion | Close Price | Volume  |
+|----|----------- |-------|------------------------------------------|-----------|---------|-------------|---------|
+| 1  | 2023-01-05 | AAPL  | "Apple stock surges as earnings beat expectations."  | 0.85      | Joy     | 142.56       | 98,200  |
+| 2  | 2023-01-06 | TSLA  | "Tesla shares drop after regulatory concerns arise." | -0.75     | Fear    | 111.23       | 120,500 |
+
+This dataset can be used for financial sentiment/emotion classification and stock market time series prediction.
+
+
+- price data: price_raw data.zip, merged_stock_prices.csv. 
+    - **38 companies histrical price data in the zip file** in csv format. The tweet and price dataset together are used for Multivariate Time Series tasks. 
+    - Tickers: 
+        'AAPL', 'ABNB', 'AMT', 'AMZN', 'BA', 'BABA', 'BAC', 'BKNG', 'BRK.A', 'BRK.B', 'CCL', 'CVX',
+        'DIS', 'FB', 'GOOG', 'GOOGL', 'HD', 'JNJ', 'JPM', 'KO', 'LOW', 'MA', 'MCD', 'MSFT', 'NFLX',
+        'NKE', 'NVDA', 'PFE', 'PG', 'PYPL', 'SBUX', 'TM', 'TSLA', 'TSM', 'UNH', 'UPS', 'V', 'WMT', 'XOM'
+        - 'FB' ticker is changed to 'META', but the time at the data collection was 'FB'.
+  - ## Data Dictionary for merged_stock_price
 
 The dataset contains historical stock price data with the following columns:
 
 | Column Name  | Data Type  | Description  |
 |-------------|------------|-----------------------------------------------|
-| Date        | object     | Date of the stock price record |
-| Open        | float64    | Opening price of the stock on the given date |
-| High        | float64    | Highest price reached during the trading day |
-| Low         | float64    | Lowest price reached during the trading day |
-| Close       | float64    | Closing price of the stock on the given date |
-| Adj Close   | float64    | Adjusted closing price accounting for splits and dividends |
-| Volume      | int64      | Number of shares traded during the day |
-| Stock       | object     | Stock ticker symbol |
+| Date        | String     | Date of the stock price record |
+| Open        | float      | Opening price of the stock on the given date |
+| High        | float      | Highest price reached during the trading day |
+| Low         | float      | Lowest price reached during the trading day |
+| Close       | float      | Closing price of the stock on the given date |
+| Adj Close   | float      | Adjusted closing price accounting for splits and dividends |
+| Volume      | integer    | Number of shares traded during the day |
+| Stock       | String     | Stock ticker symbol |
 
 ## Sample Data
 
@@ -40,12 +75,4 @@ Below is a preview of the dataset:
 
 This table provides an overview of the dataset's structure, which can be used for further analysis and modeling.
 
-- price data: price_raw data.zip, merged_stock_prices.csv. 
-    - **38 companies histrical price data in the zip file** in csv format. The tweet and price dataset together are used for Multivariate Time Series tasks. 
-    - Tickers: 
-        'AAPL', 'ABNB', 'AMT', 'AMZN', 'BA', 'BABA', 'BAC', 'BKNG', 'BRK.A', 'BRK.B', 'CCL', 'CVX',
-        'DIS', 'FB', 'GOOG', 'GOOGL', 'HD', 'JNJ', 'JPM', 'KO', 'LOW', 'MA', 'MCD', 'MSFT', 'NFLX',
-        'NKE', 'NVDA', 'PFE', 'PG', 'PYPL', 'SBUX', 'TM', 'TSLA', 'TSM', 'UNH', 'UPS', 'V', 'WMT', 'XOM'
-        - 'FB' ticker is changed to 'META', but the time at the data collection was 'FB'.
-train_stockemo.csv: processed data, merging the raw datasets together for consistent analysis. 
 
