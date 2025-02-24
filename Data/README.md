@@ -75,4 +75,9 @@ Below is a preview of the dataset:
 
 This table provides an overview of the dataset's structure, which can be used for further analysis and modeling.
 
+## Note
 
+The datasets are inspired by and builds upon research in financial sentiment and investor emotions. For more details, refer to:
+Lee, Jean, Hoyoul Luis Youn, Josiah Poon, and Soyeon Caren Han.  
+["StockEmotions: Discover Investor Emotions for Financial Sentiment Analysis and Multivariate Time Series."](https://doi.org/10.48550/arXiv.2301.09279)  
+*arXiv, February 6, 2023*.
