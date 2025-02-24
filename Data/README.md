@@ -11,7 +11,7 @@ This repository contains a financial-domain-focused dataset for financial sentim
     - **ambiguous, amusement, anger, anxiety, belief, confusion, depression, disgust, excitement, optimism, panic, surprise** 
 <p align="left"><img src="./img/4_annotation_guide.png" style="max-width: 40%;"></p>
 
-[Download the dataset](./data/stock_data.csv)
+[Download the dataset](https://github.com/Rising-Stars-by-Sunshine/Yiwei_Zhang_PS2/blob/main/Data/merged_stock_prices.csv)
 
 ## Data explained
 - tweet folder
