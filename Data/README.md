@@ -1,6 +1,8 @@
 This repository contains a financial-domain-focused dataset for financial sentiment/emotion classification and stock market time series prediction. It's an open access dataset comes from the paper: [StockEmotions: Discover Investor Emotions for Financial Sentiment Analysis and Multivariate Time Series](https://arxiv.org/abs/2301.09279) accepted by AAAI 2023 Bridge (AI for Financial Services).
 
-## Key statistics of the data
+
+## Key statistics of the data<img width="1028" alt="截屏2025-02-24 08 58 54" src="https://github.com/user-attachments/assets/f0af49f2-565c-4b17-b457-cb6fbf9683dd" />
+
 - Data collection period : **Jan 2020 - Dec 2020**
 - Number of Utterance : **10,000**  (train 80%, val 10%, test 10%)
 - Sentiment classes: 2 annotated by users 
