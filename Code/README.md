@@ -37,4 +37,72 @@ This repository requires **Python 3.9+** and the following key libraries:
 | `shap` | `>=0.40.0` | `pip install shap` |
 
 ## Usage Instruction
-# Step-by-Step Guide on Running Each Notebook
+Step-by-Step Guide on Running Each Notebook
+
+1️⃣ Loading Datasets
+To load datasets, you can use the following Python code:
+```bash
+python
+import pandas as pd
+df = pd.read_csv("dataset.csv")
+If you are using Google Colab, you can upload files with:
+```bash
+
+from google.colab import files
+uploaded = files.upload()
+```
+2️⃣ Running NLP or Social Network Analysis
+For NLP tasks using transformer-based models like BERT, ensure you have the transformers library installed. Here’s an example for sentiment analysis:
+
+python
+```bash
+from transformers import pipeline
+sentiment_pipeline = pipeline("sentiment-analysis")
+result = sentiment_pipeline("The market is very volatile today!")
+print(result)
+```
+3️⃣ Training & Evaluating Predictive Models
+To train a predictive model, such as a Random Forest Classifier, follow these steps:
+python
+```bash
+from sklearn.ensemble import RandomForestClassifier
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+```
+
+Evaluate model performance
+```bash
+from sklearn.metrics import accuracy_score
+print(f"Accuracy: {accuracy_score(y_test, y_pred)}")
+```
+4️⃣ Running Causal Inference (RD Design)
+Perform Regression Discontinuity Analysis using the following code:
+
+python
+```bash
+from rdrobust import rdrobust
+rd_results = rdrobust(Y, X, c=0)
+print(rd_results)
+```
+
+Visualize RD Discontinuity Plot
+```bash
+import matplotlib.pyplot as plt
+plt.scatter(X, Y, alpha=0.5)
+plt.axvline(0, color='red', linestyle='--', label='Cutoff')
+plt.xlabel("Running Variable (Days from Cutoff)")
+plt.ylabel("Outcome Variable (Sentiment Score)")
+plt.title("Regression Discontinuity Analysis")
+plt.legend()
+plt.show()
+```
+# Expected Outcome
+Data Preprocessing & EDA	Summary statistics, missing values analysis, and visualizations of distributions.
+
+Machine Learning Model Training	Model accuracy, precision-recall scores, feature importance plots.
+
+Regression Discontinuity Analysis	Estimated treatment effect (β1), RD plots, p-values for significance testing.
+
+# Contributors
+Yiwei Zhang, Lead Researcher, Causal Inference & Prediction & Explanation & Data Preprocessing
