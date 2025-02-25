@@ -51,7 +51,7 @@ This dataset can be used for financial sentiment/emotion classification and stoc
         'DIS', 'FB', 'GOOG', 'GOOGL', 'HD', 'JNJ', 'JPM', 'KO', 'LOW', 'MA', 'MCD', 'MSFT', 'NFLX',
         'NKE', 'NVDA', 'PFE', 'PG', 'PYPL', 'SBUX', 'TM', 'TSLA', 'TSM', 'UNH', 'UPS', 'V', 'WMT', 'XOM'
         - 'FB' ticker is changed to 'META', but the time at the data collection was 'FB'.
-  - ## Data Dictionary for merged_stock_price
+## Data Dictionary for merged_stock_price
 
 The dataset contains historical stock price data with the following columns:
 
