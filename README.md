@@ -1,4 +1,6 @@
 # Yiwei_Zhang_PS2
+# A Dual Approach to Stock Market Analysis: Integrating Machine Learning Forecasting and Regression Discontinuity to Assess the Impact of the Federal Reserve’s COVID-19 Policy Intervention on Investor Sentiment
+
 # 🖥️ System Configuration Instructions
 
 This repository contains the system configuration details, including **CPU, Memory, Disk Space, Python environment, and installed packages**. These specifications ensure compatibility and reproducibility for research and development.
