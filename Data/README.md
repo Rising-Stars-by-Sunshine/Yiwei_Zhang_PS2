@@ -17,7 +17,7 @@ This repository contains a financial-domain-focused dataset for financial sentim
     - **train_stockemo.csv** : In total, 8000 samples. The file has id, date, ticker, emo_label, senti_lable, original, and processed content. For the data curation, processing (e.g. emoji, CTAG, HTAG), and annotation, we refer to our paper. The dataset is used for Financial Sentiment/Emotion Classification tasks.
     - [Download the dataset](https://github.com/Rising-Stars-by-Sunshine/Yiwei_Zhang_PS2/blob/main/Data/merged_stock_prices.csv)
 
-## Data Dictionary
+## Data Dictionary for train_stockemo.csv
 
 The dataset contains stock market sentiment and emotion analysis data with the following columns:
 
@@ -51,7 +51,7 @@ This dataset can be used for financial sentiment/emotion classification and stoc
         'DIS', 'FB', 'GOOG', 'GOOGL', 'HD', 'JNJ', 'JPM', 'KO', 'LOW', 'MA', 'MCD', 'MSFT', 'NFLX',
         'NKE', 'NVDA', 'PFE', 'PG', 'PYPL', 'SBUX', 'TM', 'TSLA', 'TSM', 'UNH', 'UPS', 'V', 'WMT', 'XOM'
         - 'FB' ticker is changed to 'META', but the time at the data collection was 'FB'.
-## Data Dictionary for merged_stock_price
+## Data Dictionary for merged_stock_price.csv
 
 The dataset contains historical stock price data with the following columns:
 
